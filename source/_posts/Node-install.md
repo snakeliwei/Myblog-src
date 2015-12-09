@@ -13,12 +13,12 @@ date: 2015-12-08 16:50:51
 ![Node](/images/nodejs.jpg)
 ## 二进制包安装
 1. 官网下载二进制包,并解压到相应目录
-```{bash}
+```bash
 $ wget https://nodejs.org/dist/v4.2.3/node-v4.2.3-linux-x64.tar.gz
 $ tar xvzf node-v4.2.3-linux-x64.tar.gz
 ```
 2. 设置环境变量
-```{bash}
+```bash
 $ vim ~/.bashrc
 
 #set nodejs env
@@ -27,27 +27,27 @@ export PATH=$NODE_HOME/bin:$PATH
 export NODE_PATH=$NODE_HOME/lib/node_modules:$PATH
 ```
 3. 设置生效
-```{bash}
+```bash
 $ source ~/.bashrc
 ```
 4. 设置npm国内镜像
-```{bash}
+```bash
 $ npm config set registry http://registry.cnpmjs.org
 ```
 
 ## 源码安装
 1. 官网下载源码包,并解压到相应目录
-```{bash}
+```bash
 $ wget https://nodejs.org/dist/v4.2.3/node-v4.2.3.tar.gz
 $ tar xvzf node-v4.2.3.tar.gz
 ```
 2. 进入目录进行编译
-```{bash}
+```bash
 $ ./configure --prefix=/usr/local/nodejs
 $ make && make install
 ```
 3. 设置环境变量
-```{bash}
+```bash
 $ vim ~/.bashrc
 #set nodejs env
 export NODE_HOME="the Node path"
@@ -55,10 +55,10 @@ export PATH=$NODE_HOME/bin:$PATH
 export NODE_PATH=$NODE_HOME/lib/node_modules:$PATH
 ```
 4. 设置生效
-```{bash}
+```bash
 $ source ~/.bashrc
 ```
 5. 设置npm国内镜像
-```{bash}
+```bash
 $ npm config set registry http://registry.cnpmjs.org
 ```
