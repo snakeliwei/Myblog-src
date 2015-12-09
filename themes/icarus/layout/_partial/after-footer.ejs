@@ -1,0 +1,22 @@
+
+<%- partial('comment') %>
+<script async="async" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/2.0/busuanzi.mini.js"></script>
+
+<% if (theme.fancybox){ %>
+  <script type="text/javascript">
+  loadCSS("//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css");
+  </script>
+  <script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js?__inline=true"></script>
+<% } %>
+
+<script src="/js/script.js?__inline=true"></script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    bp.async = true;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
