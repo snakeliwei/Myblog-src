@@ -1,6 +1,12 @@
 title: Windows下使用Cygwin打造终极shell
-date: 2015-12-04 16:38:19
 tags:
+  - shell
+categories:
+  - Study
+cc: true
+hljs: true
+comments: true
+date: 2015-12-04 16:38:19
 ---
 >一直以来都是putty ssh 到linxu下使用shell，试着用Cygwin来在windows中原生打造一个shell环境。Cygwin自带mintty很好用，基本配置后配合tmux或screen就可抛弃xshell/securecrt/putty等专用客户端了。
 ![](/images/zsh.png)

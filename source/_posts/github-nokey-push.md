@@ -1,6 +1,12 @@
 title: Windows下github免密码push
+tags:
+  - github
+categories:
+  - Study
+cc: true
+hljs: true
+comments: true
 date: 2015-12-02 11:07:41
-tags: Github
 ---
   一直以来往github push代码都是要填入用户名密码，真是浪费不少时间，现在不用输密码真是酸爽。
 ----------

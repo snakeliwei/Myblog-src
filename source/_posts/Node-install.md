@@ -1,6 +1,12 @@
 title: Ubuntu Nodejs install
+tags:
+  - Nodejs
+categories:
+  - Study
+cc: true
+hljs: true
+comments: true
 date: 2015-12-08 16:50:51
-tags: Nodejs,Ubuntu
 ---
 >在ubuntu下用apt安装nodejs太坑，现在记录下另外两种安装方式以备用
 
