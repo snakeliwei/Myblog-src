@@ -31,9 +31,9 @@ permalink_defaults:
 
 # Links
 links:
-  刘典的博客: http://blog.sina.com.cn/ld2254432
+  开发者头条: http://toutiao.io/
   StartupNews: http://news.dbanotes.net/news
-  Cubernet's Blog: http://cubernet.cn
+
 
 # Directory
 source_dir: source
@@ -49,7 +49,7 @@ filename_case: 0
 post_asset_folder: false
 relative_link: false
 highlight:
-  enable: false
+  enable: true
   line_number: false
   tab_replace: true
 

@@ -18,8 +18,9 @@ sidebar: right
 widgets:
 - recent_posts
 - links
+- google-ads
 
-thumbnail: false
+thumbnail: true
 
 # Miscellaneous
 twitter:
