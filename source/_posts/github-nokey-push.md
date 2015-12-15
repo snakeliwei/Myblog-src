@@ -15,7 +15,7 @@ date: 2015-12-02 11:07:41
  2. git clone 项目.
 
  3. 生成ssh-key.
-```bash
+```{bash}
 $ ssh-keygen -t rsa -C "email@email.com"
 ```
  4. 在用户的.ssh目录下会生成id_rsa和id_rsa.pub两个文件.
@@ -23,7 +23,7 @@ $ ssh-keygen -t rsa -C "email@email.com"
  5. 记事本打开id_rsa.pub复制内容粘贴到github ssh-key页面.
 
  6. 修改推送方法为ssh,再次推送就无需密码了.
- ```bash
+ ```{bash}
 $ git remote -v
 origin  https://github.com/user/Myrepo.git (fetch)
 origin  https://github.com/user/Myrepo.git (push)
