@@ -29,7 +29,7 @@ Name: DEV
 ID: CKAS:JEPR:SA3D:WA54:YQ6U:36RS:R5BO:7CXV:NZDF:PPY4:ORES:UY3H
 WARNING: No swap limit support
 ```
-2. 确认内核>3.18并且模块overlay有没有被启用,如果```lsmod | grep overlay```没有返回,可以使用```modprobe overlay```加载内核模块 
+2. 确认内核>3.18并且模块overlay有没有被启用,如果"$ lsmod | grep overlay"没有返回,可以使用"$ modprobe overlay"加载内核模块 
 ```
 $ uname -r
 3.19.0-21-generic
