@@ -13,7 +13,7 @@ author_title: 'Test Engineer & Web Developer'
 location: 'Hubei, China'
 follow: https://github.com/snakeliwei/
 language: en
-github_repo: https://github.com/snakeliwei/Myblog-src
+github_repo: https://github.com/snakeliwei
 
 stylus:
   compress: true
@@ -50,8 +50,8 @@ post_asset_folder: false
 relative_link: false
 highlight:
   enable: true
-  line_number: false
-  tab_replace: true
+  line_number: true
+  tab_replace: false
 
 # Category & Tag
 default_category: uncategorized
