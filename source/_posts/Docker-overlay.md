@@ -12,7 +12,7 @@ date: 2015-12-03 14:36:19
 OverlayFS之前已经加入到了Ubuntu内核中，但是那并不是我们想要的。Overlay（没有FS）是一个不同的内核模块，因此你需要安装3.18（或者以上）的内核，Docker你需要安装Docker 1.4或者更高版本。
 1. 使用Docker info查看Docker运行信息
 
-```bash
+```
 $ docker info
 Containers: 0
 Images: 6
