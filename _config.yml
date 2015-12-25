@@ -49,9 +49,9 @@ filename_case: 0
 post_asset_folder: false
 relative_link: false
 highlight:
-  enable: true
-  line_number: true
-  tab_replace: false
+  enable: false
+  line_number: false
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
