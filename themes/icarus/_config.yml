@@ -1,9 +1,9 @@
 # Header
 menu:
-  Home: .
+  #Home: .
   Archives: /archives/
   Tags: /tags/
-  Timeline: /timeline/
+  #Timeline: /timeline/
   About: /about/
   Favorite: /favorite/
   Wiki: #
