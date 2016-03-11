@@ -1,4 +1,4 @@
-title: Git push&pull with no pull
+title: Git https push&pull with no password
 tags:
   - git
   - tips
