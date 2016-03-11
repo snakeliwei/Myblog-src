@@ -15,7 +15,7 @@ date: 2016-03-11 14:36:19
 ```bash
 $ cd ~
 $ touch .git-credentials
-$ echo "https://{username}:{password}@github.com" > .git-credentials  //使用知己的帐号密码替换{username} {password}
+$ echo "https://{username}:{password}@github.com" > .git-credentials  //使用自己的帐号密码替换{username} {password}
 $ git config --global credential.helper store
 ```
 
