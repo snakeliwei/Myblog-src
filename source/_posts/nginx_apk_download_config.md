@@ -30,6 +30,7 @@ x-nokia-widget                        wgz;
 application/octet-stream              deb;
 ```
 >目前许多提供下载.apk和.ipa的地方，用IE浏览器下载完后文件自动变成了zip后缀，导致无法使用，只要在nginx的conf/mime.typs内加上
+
 ```
 application/vnd.android.package-archive apk;   
 application/iphone          pxl ipa;
