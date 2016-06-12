@@ -1,4 +1,4 @@
-title: Git https push&pull with no password
+title: Apk/ipk download config for nginx 
 tags:
   - nginx
   - tips
