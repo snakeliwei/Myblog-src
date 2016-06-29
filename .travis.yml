@@ -24,3 +24,5 @@ script:
 - hexo clean
 - hexo g
 - hexo d
+notifications:
+  - webhooks: https://hooks.pubu.im/services/ke4lnw2zky43crd
