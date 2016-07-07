@@ -161,9 +161,9 @@ manu_db=# select nextval('employ_id_seq');
 ```
 ***
 ### 快速修改id的自增起始数
-- 使用语句: `select setval('your_table_id_seq',(select max(id) from 表名));`
-- 如何查看: `your_table_id_seq？`
-- 使用命令：`\d 表名`
+- 使用语句: `select setval('your_table_id_seq',(select max(id) from <tablename>));`
+- 如何查看: `your_table_id_seq?`
+- 使用命令: `\d <tablename>`
 
 >  转载自[Bean_lee 's PostgreSQL之sequence](http://blog.chinaunix.net/uid-24774106-id-3973781.html)
 
