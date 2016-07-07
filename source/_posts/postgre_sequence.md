@@ -160,7 +160,7 @@ manu_db=# select nextval('employ_id_seq');
 (1 row)
 ```
 ***
-### 快速修改id的自增起始数
+### 快速修改id的自增起始数为当前最大的id
 - 使用语句: `select setval('your_table_id_seq',(select max(id) from <tablename>));`
 - 如何查看: `your_table_id_seq?`
 - 使用命令: `\d <tablename>`
