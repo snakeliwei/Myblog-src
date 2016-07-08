@@ -8,7 +8,7 @@ hljs: true
 comments: true
 date: 2015-12-08 16:50:51
 ---
->在ubuntu下用apt安装nodejs太坑，现在记录下另外两种安装方式以备用
+> 在ubuntu下用apt安装nodejs太坑，现在记录下另外两种安装方式以备用
 
 ![Node](/images/nodejs.jpg)
 ## 二进制包安装
