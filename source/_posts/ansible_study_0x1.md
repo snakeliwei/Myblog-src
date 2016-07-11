@@ -1,7 +1,6 @@
 title: Ansible study note 00x01
 tags:
-  - git
-  - tips
+  - Ansible
 categories:
   - Study
 cc: true
@@ -13,7 +12,7 @@ date: 2016-07-11 16:30:19
 
 ## 安装和配置
 
-安装
+### 安装
 ```bash
 sudo pip install ansible
 ```
@@ -65,7 +64,7 @@ ansible 192.168.1.134 -m ping -u ashin
 ```bash
 ansible v1 -m ping -u ashin --sudo -K
 ```
-配置文件
+### 配置
 配置文件可以从多个地方加载，其优先级顺序为：
 ```
 ANSIBLE_CONFIG (环境变量)
