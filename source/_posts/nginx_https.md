@@ -48,4 +48,4 @@ server {
  	...  ...
 }
 ```
-
+> 最后提供一个[免费证书申请](https://buy.wosign.com/free/) 自用也可用选择Let's Encrypt 只是蛋疼的DNS解析，如果这个解决还是非常不错的。
