@@ -6,7 +6,7 @@ categories:
 cc: true
 hljs: true
 comments: true
-date: 2016-05-12 09:36:19
+date: 2016-11-02 15:36:19
 ---
 >在用 ssh-keygen 生成密钥对时，通常会面临是使用RSA还是DSA的选择：RSA or DSA, this is a question!
 
