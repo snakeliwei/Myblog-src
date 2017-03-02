@@ -44,7 +44,7 @@ Reboot your system.
 
 - Docker客户端版本大于1.10的用户
 修改daemon配置文件/etc/docker/daemon.json：
-```
+```bash
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -59,12 +59,12 @@ sudo systemctl restart docker
 - Docker客户的版本小于等于1.10的用户或者想配置启动参数，可以使用下面的命令将配置添加到docker daemon的启动参数中。
 
 1. Ubuntu 12.04 14.04的用户
-```
+```bash
 echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=https://knb1nxmo.mirror.aliyuncs.com -s overlay --live-restore=true \"" | sudo tee -a /etc/default/docker
 sudo service docker restart
 ```
 2. Ubuntu 15.04 16.04的用户
-```
+```bash
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo tee /etc/systemd/system/docker.service.d/mirror.conf <<-'EOF'
 [Service]
