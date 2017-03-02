@@ -38,12 +38,13 @@ $ sudo update-grub
 Reboot your system.
 ```
 
-## 配置加速器，使用overlay，启用Live Restore(更新docker daemon时不影响已启动的容器)
+## 配置加速器，使用overlay，启用Live Restore
 以ubuntu为例，其他发行版请自行查看[官方文档](https://docs.docker.com)
-> 使用overlay需要内核版本在3.18以上，并且在内核中已启用[传送门](http://snakeliwei.github.io/2015/12/03/Docker-overlay/)
+> 使用overlay需要内核版本在3.18以上，并且在内核中已启用[传送门](http://snakeliwei.github.io/2015/12/03/Docker-overlay/)。启用Live Restore后在更新docker daemon时不影响已启动的容器。
 
 - Docker客户端版本大于1.10的用户
 修改daemon配置文件/etc/docker/daemon.json：
+
 ```bash
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
@@ -56,14 +57,18 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
 - Docker客户的版本小于等于1.10的用户或者想配置启动参数，可以使用下面的命令将配置添加到docker daemon的启动参数中。
 
 1. Ubuntu 12.04 14.04的用户
+
 ```bash
 echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=https://knb1nxmo.mirror.aliyuncs.com -s overlay --live-restore=true \"" | sudo tee -a /etc/default/docker
 sudo service docker restart
 ```
+
 2. Ubuntu 15.04 16.04的用户
+
 ```bash
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo tee /etc/systemd/system/docker.service.d/mirror.conf <<-'EOF'
@@ -73,3 +78,4 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
