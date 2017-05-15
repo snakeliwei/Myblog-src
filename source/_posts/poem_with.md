@@ -1,6 +1,6 @@
 title: 一首最近很流行的诗
 tags:
-  - Other
+  - poem
 categories:
   - Other
 cc: true
