@@ -1,6 +1,6 @@
 title: 一首最近很流行的诗
 tags:
-  - other
+  - Other
 categories:
   - Other
 cc: true
@@ -8,7 +8,9 @@ hljs: true
 comments: true
 date: 2017-05-15 14:36:19
 ---
+> 一首最近很流行的诗与大家共勉
 
+```
 纽约时间比加州时间早三个小时，
 
 New York is 3 hours ahead of California,
@@ -100,3 +102,4 @@ You’re not EARLY.
 在命运为你安排的属于自己的时区里，一切都准时。
 
 You are very much ON TIME, and in your TIME ZONE Destiny set up for you.
+```
