@@ -1,8 +1,7 @@
 language: node_js
 repo_token: O9S1H0OrNj1QkJdG75C1xdDyQFH1ysw75
 node_js:
-  - '5'
-  - '4'
+  - '6'
 branches:
   only:
   - master
