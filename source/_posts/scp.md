@@ -11,10 +11,10 @@ date: 2017-06-8 14:33:51
 ---
 > scp命令可以在linux之间复制文件和目录 
 
-### 命令基本格式： 
+### 命令基本格式
 `scp [option] file_source file_target`
 
-* 从本地复制到远程
+#### 从本地复制到远程
 ```
 scp local_file remote_username@remote_ip:remote_folder
 scp local_file remote_username@remote_ip:remote_file
@@ -40,24 +40,25 @@ scp -r local_folder remote_ip:remote_folder
 scp -r /home/space/music/ root@www.cumt.edu.cn:/home/root/others/ 
 scp -r /home/space/music/ www.cumt.edu.cn:/home/root/others/ 
 ```
-### 从远程复制到本地
+#### 从远程复制到本地
 从远程复制到本地, 只要将从本地复制到远程的命令的后2个参数调换顺序即可；
 ```
 scp root@www.cumt.edu.cn:/home/root/others/music /home/space/music/1.mp3 
 scp -r www.cumt.edu.cn:/home/root/others/ /home/space/music/
 ```
-最简单的应用如下:
-`scp user@IP:filename remoteuser@IP:filename`
+最简单的应用如下: `scp user@IP:filename remoteuser@IP:filename`
 
-可能有用的几个参数:
-+ -v 和大多数 linux 命令中的 -v 意思一样 , 用来显示进度 . 可以用来查看连接 , 认证 , 或是配置错误 . 
-+ -C 使能压缩选项 . 
-+ -P 选择端口 . 注意 -p 已经被 rcp 使用 . 
-+ -4 强行使用 IPV4 地址 . 
-+ -6 强行使用 IPV6 地址 .
+*可能有用的几个参数: *
++ -v 和大多数linux命令中的-v意思一样, 用来显示进度.可以用来查看连接, 认证或是配置错误.
++ -C 使能压缩选项.
++ -P 选择端口. 注意-p已经被rcp使用.
++ -4 强行使用IPV4地址.
++ -6 强行使用IPV6地址.
 
 
 *注意两点*
-1. 如果远程服务器防火墙有特殊限制，scp便要走特殊端口，具体用什么端口视情况而定，命令格式如下：
-`#scp -p 4588 remote@www.abc.com:/usr/local/sin.sh /home/administrator`
+1. 如果远程服务器防火墙有特殊限制，scp要走特殊端口，命令格式如下: 
+
+`scp -p 4588 remote@www.abc.com:/usr/local/sin.sh /home/administrator`
+
 2. 使用scp要注意所使用的用户是否具有可读取远程服务器相应文件的权限。
