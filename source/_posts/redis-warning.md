@@ -6,7 +6,7 @@ categories:
 cc: true
 hljs: true
 comments: true
-date: 2017-11-23 09:36:19
+date: 2017-10-23 09:36:19
 ---
 Redis 启动时会遇到以下警告，对于强迫症患者实在是不能忍，下面给出消除方法.
 
