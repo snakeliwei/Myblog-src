@@ -38,7 +38,7 @@ $ sudo update-grub
 Reboot your system.
 ```
 
-## 配置加速器，使用overlay，启用Live Restore
+## 配置加速器，使用overlay2，启用Live Restore
 以ubuntu为例，其他发行版请自行查看[官方文档](https://docs.docker.com)
 > 使用overlay需要内核版本在3.18以上，并且在内核中已启用[传送门](http://snakeliwei.github.io/2015/12/03/Docker-overlay/)。启用Live Restore后在更新docker daemon时不影响已启动的容器。
 
@@ -50,7 +50,7 @@ sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://knb1nxmo.mirror.aliyuncs.com"],
-  "storage-driver": "overlay",
+  "storage-driver": "overlay2", //使用第二版驱动
   "live-restore": true
 }
 EOF
