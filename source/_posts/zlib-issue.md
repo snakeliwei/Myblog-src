@@ -8,10 +8,10 @@ hljs: true
 comments: true
 date: 2018-04-08 16:33:51
 ---
-> 今天在更新系统包后在拉取docker image 时莫名出现libz.so.1: version `ZLIB_1.2.5.1' not found的错误，解决了顺便记录下。
+> 今天在更新系统包后在拉取docker image 时莫名出现'libz.so.1: version `ZLIB_1.2.5.1' not found'的错误，解决了顺便记录下。
 
 ## docker pull 出错：
-```
+```bash
 deploy@DEV:~ $ docker pull redis:4-alpine
 4-alpine: Pulling from library/redis
 ff3a5c916c92: Extracting [==================================================>]  2.066MB/2.066MB
@@ -31,7 +31,7 @@ failed to register layer: Error processing tar file(exit status 1: /usr/bin/unpi
 ):
 ```
 ## 解决方法:
-```
+```bash
 wget http://zlib.net/zlib-1.2.11.tar.gz
 tar zxf zlib-1.2.11.tar.gz
 cd zlib-1.2.11
