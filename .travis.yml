@@ -19,8 +19,7 @@ install:
   - npm install
 script:
   - hexo clean
-  - hexo g
-  - hexo d
+  - hexo g -d
 notifications:
   email:
     - snakeliwei@qq.com
