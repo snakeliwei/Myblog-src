@@ -1,7 +1,6 @@
 language: node_js
 repo_token: O9S1H0OrNj1QkJdG75C1xdDyQFH1ysw75
-node_js:
-  - '6'
+node_js: stable
 branches:
   only:
   - master
@@ -9,19 +8,22 @@ addons:
   ssh_known_hosts:
   - github.com
 before_install:
-- openssl aes-256-cbc -K $encrypted_8281a8241ab5_key -iv $encrypted_8281a8241ab5_iv
-  -in travis.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-- git config --global user.name "snakeliwei"
-- git config --global user.email snakeliwei@gmail.com
+  - openssl aes-256-cbc -K $encrypted_8281a8241ab5_key -iv $encrypted_8281a8241ab5_iv -in travis.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - git config --global user.name "snakeliwei"
+  - git config --global user.email snakeliwei@gmail.com
 install:
-- npm install hexo-cli -g
-- npm install
+  - npm install hexo-cli -g
+  - npm install
 script:
-- hexo clean
-- hexo g
-- hexo d
+  - hexo clean
+  - hexo g
+  - hexo d
 notifications:
-  webhooks: https://hooks.pubu.im/services/ke4lnw2zky43crd
+  email:
+    - snakeliwei@qq.com
+    - snakeliwei@gmail.com
+  on_success: change
+  on_failure: always
